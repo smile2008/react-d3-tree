@@ -267,7 +267,7 @@ class Tree extends React.Component {
     const targetNode = matches[0];
     // Persist the SyntheticEvent for downstream handling by users.
     evt.persist();
-
+console.log('here...')
     if (this.props.collapsible && !this.state.isTransitioning) {
       if (targetNode._collapsed) {
         Tree.expandNode(targetNode);
